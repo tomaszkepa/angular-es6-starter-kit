@@ -1,0 +1,61 @@
+{
+  "name": "angular-es6-starter-kit",
+  "version": "3.0.1",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">= 0.12",
+    "npm": ">= 2.1"
+  },
+  "dependencies": {
+    "angular": "1.5.0",
+    "angular-storage": "0.0.13",
+    "angular-ui-router": "0.2.15",
+    "babel-polyfill": "6.5.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.4.8",
+    "autoprefixer": "6.3.3",
+    "autoprefixer-loader": "3.1.0",
+    "babel-cli": "6.4.5",
+    "babel-eslint": "5.0.0-beta6",
+    "babel-loader": "6.2.1",
+    "babel-plugin-transform-runtime": "6.4.3",
+    "babel-preset-es2015": "6.3.13",
+    "babel-preset-stage-0": "6.3.13",
+    "babel-register": "6.5.2",
+    "babel-runtime": "6.5.0",
+    "bluebird": "3.3.1",
+    "browser-sync": "2.11.1",
+    "colors": "1.1.2",
+    "copy": "0.1.3",
+    "css-loader": "0.23.1",
+    "del": "2.2.0",
+    "eslint": "1.10.3",
+    "eslint-config-airbnb": "4.0.0",
+    "eslint-loader": "1.2.0",
+    "extract-text-webpack-plugin": "1.0.1",
+    "gaze": "0.5.2",
+    "lodash": "4.5.1",
+    "minimist": "1.2.0",
+    "mkdirp": "0.5.1",
+    "ng-annotate-webpack-plugin": "0.1.2",
+    "node-sass": "3.4.2",
+    "sass-loader": "3.1.2",
+    "style-loader": "0.13.0",
+    "url-loader": "0.5.7",
+    "webpack": "1.12.11",
+    "webpack-hot-middleware": "2.6.0",
+    "webpack-middleware": "1.4.0"
+  },
+  "scripts": {
+    "test": "eslint src",
+    "dev": "babel-node tasks/runner dev",
+    "build": "babel-node tasks/runner build",
+    "bundle": "babel-node tasks/runner bundle",
+    "server": "babel-node tasks/runner server",
+    "clean": "babel-node tasks/runner clean",
+    "copy": "babel-node tasks/runner copy",
+    "friday": "babel-node tasks/runner friday",
+    "postinstall": "npm run build -s"
+  }
+}
